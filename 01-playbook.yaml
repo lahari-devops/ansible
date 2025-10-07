@@ -1,4 +1,4 @@
-- name: ping the server
+- name: ping 
   hosts: local
   connections: local
   tasks:
