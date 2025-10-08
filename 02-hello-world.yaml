@@ -1,0 +1,6 @@
+- name: hello world
+  hosts: web
+  tasks:
+  - name: saying hello to world
+    ansible.builtin.debud:
+    msg: "Hello to everyonee"
