@@ -8,6 +8,7 @@
 
 - name: play2
   hosts: local
+  connection: local
   tasks: 
   - name: TAsk from play2
     ansible.builtin.debug:
