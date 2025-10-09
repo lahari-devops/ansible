@@ -12,4 +12,4 @@
 
   - name: storing command module output
     ansible.builtin.debug:
-      msg: "register"
+      msg: "command_result"
