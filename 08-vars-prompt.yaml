@@ -4,7 +4,7 @@
   vars_prompt:
     - name: course
       prompt: Please enter course name
-      private: false
+      private: false #we can see the entered data on screen. by default private is true
 
   tasks:
   - name: variables of task

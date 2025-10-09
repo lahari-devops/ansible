@@ -7,8 +7,8 @@
   - name: checking number is greater than 10 or not
     ansible.builtin.debug:
       msg: "given number is greater than 100"
-    when:
-      number > 100
+    when: number > 100
+    
   - name: checking number is greater than 5 or not
     ansible.builtin.debug:
       msg: "given number is greater than 5"

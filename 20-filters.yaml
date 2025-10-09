@@ -18,7 +18,7 @@
         trainer: surya
         name: java
     ansible.builtin.debug:
-      msg: "course info is {{course | dict2items}}"
+      msg: "course info is {{course | dict2items}}"     #['trainer': 'surya' , 'name': 'java']
 
   - name: convert list to map
     vars:
