@@ -7,4 +7,7 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
 
   - name: executing command module
-    ansible.builtin.command: ls -ltr > /tmp/output.txt
+    ansible.builtin.command: ls -ltr 
+
+  # - name: storing command module output
+  #   ansible
