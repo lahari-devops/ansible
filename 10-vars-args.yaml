@@ -1,0 +1,7 @@
+- name: variables from arguments
+  hosts: local
+  connections: local
+  tasks:
+  - name: Passing variables from arguments
+    ansible.builtin.debug:
+      msg: "learning {{ course }}"
