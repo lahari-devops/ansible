@@ -5,11 +5,15 @@
   - name: variables of task
     vars:
       course: java
+      hours: 10
+      trainer: surya
     ansible.builtin.debug:
       msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
 
   - name: variables of task2
     vars:
       course: azure
+      hours: 100
+      trainer: surya
     ansible.builtin.debug:
       msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
