@@ -5,10 +5,10 @@
     course: sql
   # vars_files:
   #   - course.yaml
-  vars_prompt:
-    - name: course
-      prompt: Please enter course name
-      private: false
+  # vars_prompt:
+  #   - name: course
+  #     prompt: Please enter course name
+  #     private: false
   tasks:
   - name: vars from task
     # vars:
