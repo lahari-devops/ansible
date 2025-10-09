@@ -1,0 +1,11 @@
+- name: loops
+  hosts: web
+  become: yes
+  tasks:
+  - name: looping
+    ansible.builtin.package:
+      name: "{{item}}"
+      state: installed
+    loop:
+    - git
+    - zip
