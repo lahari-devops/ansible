@@ -4,7 +4,7 @@
   become: yes
   tasks:
   - name: executing shell module
-    ansible.builtin.shell: ls -ltr > /tmp/output.txt
+    ansible.builtin.shell: ls > /tmp/output.txt
 
   # - name: command
   #   ansible.builtin.command: ls -ltr
