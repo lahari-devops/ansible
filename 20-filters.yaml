@@ -46,12 +46,12 @@
     ansible.builtin.debug:
       msg: "min number is: {{numbers | min}} and max number is: {{numbers | max}}"
 
-  - name: Install netaddr python library
+  - name: Install netaddr python library  
     ansible.builtin.pip:
       name: netaddr
       state: present
 
-  - name: check ip is valid or not 
+  - name: check ip is valid or not  #this is dependent on netaddr python module
     vars: 
       ip: '105.16.1775.12'
     ansible.builtin.debug:
