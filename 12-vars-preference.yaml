@@ -1,0 +1,17 @@
+- name: Variables preference
+  hosts: local
+  connection: local
+  vars:
+    course: sql
+  vars_files:
+    - course.yaml
+  vars_prompt:
+    - name: course
+      prompt: Please enter course name:
+      private: false
+  tasks:
+  - name: vars from task
+    vars:
+      course: ansible
+    ansible.builtin.debug:
+      msg: "learning course is {{ course }}"
