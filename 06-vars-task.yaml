@@ -1,0 +1,15 @@
+- name: variables
+  hosts: local
+  connection: local
+  tasks:
+  - name: variables of task
+    vars:
+      course: java
+    ansible.builtin.debug:
+      msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
+
+  - name: variables of task2
+    vars:
+      course: azure
+    ansible.builtin.debug:
+      msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
