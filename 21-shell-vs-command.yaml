@@ -7,9 +7,9 @@
     ansible.builtin.shell: ls -ltr > /tmp/output.txt
 
   - name: executing command module
-    ansible.builtin.command: ls -ltr 
+    ansible.builtin.command: ls 
     register: command_result
 
   - name: storing command module output
     ansible.builtin.debug:
-      msg: "{{register}}"
+      msg: "{{command_result}}"
