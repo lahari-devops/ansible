@@ -1,8 +1,8 @@
 - name: Variables preference
   hosts: local
   connection: local
-  vars:
-    course: sql
+  # vars:
+  #   course: sql
   # vars_files:
   #   - course.yaml
   # vars_prompt:
