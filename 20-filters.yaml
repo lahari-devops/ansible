@@ -19,3 +19,11 @@
         name: java
     ansible.builtin.debug:
       msg: "course info is {{course | dict2items}}"
+
+  - name: convert list to map
+    vars:
+      course: 
+        - {'key': 'name' , 'value': 'sql'}
+        - {'key': 'trainer' , 'value': 'surya'}
+    ansible.builtin.debug:
+      msg: "course info is {{course | items2dict}}"
