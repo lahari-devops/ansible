@@ -9,3 +9,9 @@
   - name: variables of task
     ansible.builtin.debug:
       msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
+
+  - name: variables of task2
+    vars:
+      course: azure
+    ansible.builtin.debug:
+      msg: "Course is {{ course }} and duration is {{ hours }} and the trainer is {{ trainer }}"
